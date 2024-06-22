@@ -1,0 +1,258 @@
+Before Java -
+
+     C procedureal oriented lang.
+     C++ Object oriented prog. lang. but not 100% Object oriented
+
+     Java Pure object oriented - primitive int, float long  kept for backward compatibility. 
+                               - Wrapper classes Integer, Float, Long
+     - Started the devlopment of Java on 1991 in Sunmicrosystem and released the official oversion in 1996 - Java 1.0
+     - James Gosling is the main lead architect for the Java project in Sunmicrosystem.     
+
+     Java Terminology :- 
+
+     1. Java Virtual Machine (JVM ) : - JVM is the virtual machine in Java where 
+
+     Types of Software : 
+
+     1. System Software 
+        -> System Software is the type of software that is intermediate or interface between application software and system.
+           e.g. Operating System, file management     
+   
+     2. Application Software
+        -> Application Software is developed to solve the specific problem or individual problems.
+           e.g. Colleage Mgmt. System , Hospital Mgmt. system
+
+     Types of Application : 
+       1. Standalone Application
+          -> Any programe runs in the context of local disk, whose results are not sharable.
+
+       2. Distributed Application :
+          -> Those application which runs in the context of browser whose results are sharable across the globe.
+
+          Client-server Architecture : 
+            Tier 1 :-
+                    -> set of client programs
+                    -> set of server programs
+            Tier 2 :- 
+                    -> set of cleint programs
+                    -> set of server programs
+                    -> DB layer
+            Tier 3 :-
+                   -> set of client programs
+                   -> set of server programs
+                   -> DB layer
+                   -> Cluster Setup Node
+            N Tier :-
+                   -> set of client programs
+                   -> set of firewall programs
+                   -> set of server programs
+                   -> DB layer
+                   -> Cluster Setup Node
+
+            
+            Java Release Types :
+               J2SE -->  Java 2 Standard Edition   -> Desktop Application
+               J2EE -->  Java 2 Enterprise Edition -> Web Application / Enterprise Application
+               J2ME -->  Java 2 Mobile Edition     -> Mobile Application
+ 
+ * Features of Java :- 
+     1. Simple
+     2. Platform Independent
+     3. Architectural Neutral
+     4. Portable
+     5. Multithreaded
+     6. Networked
+     7. Distributed
+     8. High Performance
+     9. Robust
+     10. Dynamic
+     11. Interpreted
+     12. Secured
+     13. OOPL
+
+  1. Simple :- 
+       Java is one of the simple programming language because of the following points
+        - Java programming doesn't support a complex concept called pointers.
+        - Java introduced concept of byte code.
+
+      Q. Define bytecode & JVM?
+      =>  Bytecode : Bytecode is the set of optimised instructions generated during compilation phase & it is more powerful than ordinary pointer code.
+          JVM : JVM is set of programs developed by Sun Microsystem & supplied as a part of JDK for reading line by line of bytecode  & convert into native understanding form of OS.
+
+      - Java language is one of the compiled & interpreted programming language.
+ 
+  2. Platform Independent :- 
+     A platform independent technology/language related applications run on every OS, without considering their vendors.
+     In order to say particular language is platform independennt if and only if it has to satisfy the following properties.
+       - The language must have data types & they must take same amount of memory space.
+       - The language must contain some special internal progrmas which will convert from one format of one OS to another format of another OS.
+     The languages like c, c++ are treated as platform dependent whereas Java language is treated as platform independent language. 
+     - 1 byte = 8 bits
+
+
+   3. Architecture Neutral :-
+      -  An application is said to be architectural neautral if and only if the application runs on every processor without considering their architectures and vendros. (provider).
+      - A language is said to be architectural neutral , it has to satisfy the following property - 
+        - The s/w must have the special internal programss which will convert the factors of one processor to factors of another processer.
+        - The language like Java is one of the architectural neutral langauge because it satisfy above property.
+        - The basic aim of Sun microsystem is that Java applications must run without considering about software benchmarks and hardware benchmarks.
+
+   4. Portable :-
+       - A portable is one which will run on every operating system and on every processor without considering their vendors and architectures.
+       - The applications of c, c++, pascal etc. are treated as non portable applications.
+       - All the Java applications are treated as portable applications.
+
+       According to Sun Microsystem :
+          Portability = Platform Independent + Architectural Neutral
+
+   5. Multithreaded : 
+        Performing multiple tasks at a time is known as multitasking.
+        Multitasking happen on process or in system program.
+
+        - Multithreading is one of the distinct facility of Java program.
+        - The basic aim of multithreading is that to achieve concurrent execution.
+        - A flow of control is know as thread.
+        - A basic use of thread is to execute user/programmer defined functions.
+        - Java Program :
+           Foreground/Child thread
+           Background/Parent thread
+        - Multitasking is one of the specialized for of OS.
+        - In java programming multithreading applications are developed by following.
+           1. java.lang.Thread (class)
+           2. java.lang.Runnable (Interface)
+        - A foreground thread is one which always excutes logic of the java program or user/programmer defined methods of java.
+        - A Background thread is one which always monitors executor status of the foreground thread.
+
+   6.Networked:-
+   - Java has introduced the capability to develope networked applications, web applications.
+   - Java has J2SE and it has capability or API or pacakges to develope network applicaionts.
+     e.g - java.net.*;  ServerSocket ss=new ServerSocket(6666);
+
+7. Distributed :-
+   According to the industry standards, in Java realtime applications are classified into two types they are
+    1. Centralized Applications
+    2. Distributed Applications
+
+    When we run the Java Program, for executing the logic of our Java program there exist one thread known as foreground thread. To monitor the status of foreground thread, there exist one more background Java Program known as Garbage Collector.
+    For executing garbage collector there exist on thread know as background thread hence in Java programming execution environment there exist above two threads.
+
+8. High Performance:-
+   Java is one of the high performance programming language because of the following reasons
+    1. Because of magic of bytecode.(We know that bytecode is the set of optimized instructions generated by the Java compiler during compilation phase and it is more faster than ordinary pointer code.)
+    2. Because of magic of GC , automatic memory mangement is taken care.(We know that GC is the one of the system background Java program runs along with our regular Java program for collecting unused memroy space for improving the performance of Java applications.)
+    3. Java programming is free from pointers so that a Java program can develop an application as early.
+    
+9. Robust(Strong) :-
+    When we write any program in any programming lang. we come across various types of errors.Broadly errors are classified into two types they are:
+     1. Compile time errors:-
+     2. Runtime errors.
+
+10. Dynamic :-
+     Types of memory allocation
+      1. Static memory allocation.
+      2. Dynamic memory allocation.
+
+     - Java only supports dynamic memory allocation.
+
+11. Interpreted :-
+   :> javac Test.java   -> compilation
+   :> java Test         -> interpretion
+
+    Java supports both compilation as well as interpretation.
+
+    JIT(Just In Time) is the set of programs developed by Sun Microsystem and added into JVM to speed up the interpretation phase by reading the entire section of the bytecode and converting it into native understanding form of OS.
+
+12. Secured:-
+    - No pointers
+    - Class file and robust bytecode.
+    - Automatic memory management.
+    - "java.security"
+
+13. OOPL (Object Oriented Programming language) :-
+
+1. Procedure Oriented prog. Lang. 
+      e.g. c, pascal, cobol, ada 
+
+2. Object Oriented Prog. Lang
+   e.g. Small Talk, Lisp, Object Pascal, Object COBOL, C++, Java, .Network
+      C++ is partial object oriented. 
+      - Every C++ program can be written like c prog.
+      - 50% of OOPS principles not satisfied.
+      - Friend Function
+            
+
+
+* Fundamental Datatypes in Java :
+   "Datatype is used to store any type of value in the memory location".
+
+   In Java programming we have 8 fundamental datatypes which are categorised into 4 categories or groups they are:
+   
+      1. Integer Category Datatypes
+      2. Float
+      3. Character
+      4. Boolean
+
+   1. Integer Category Datatype:
+      This category datatypes are used for storing integer data in the main memory of the computer by allocating sufficient amount of memory space.
+      In other words this category datatypes are used for representing whole numbers in the memory fo the computer.
+      Integer category datatypes are divided into 4 types:
+      
+      S.no      Datatype      Size        Range   
+      ======================================================  
+      1.        byte           1 byte     -128 to +127
+      2.        short          2 byte     -32,768 to +32,767
+      3.        int            4 byte     -2,147,483,648 to +2,147,483,647
+      4.        long           8 byte     -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+   
+   2. Float Category Datatype:
+      A float data or real data is one which is represented in the form of scale , precision.
+
+      e.g.  xxx.yyy
+      here xxx is called scale yyy is called precision.
+
+      In order to represent float data or real data in the main memory of the computer we use the float category data types.
+      Float category data types are divided into 2 types 
+
+      Sno.        Data Type       Size      Range     No. Of Dec places
+   =====================================================================
+      1.          float           4 byte                  6
+      2.          double          8 byte                  14
+         
+   3. Character Category Datatype :
+      - The range of char datatype is 0 to 65535.
+      - The default value is '\u0000' and that is the lowest range of Unicode.
+      - The default size(as mentioned above) 2 bytes because Java uses the Unicode system and not the ASCII code system.
+      e.g. char a = 'A';
+            char a;
+
+   4. Boolean Category Datatype : 
+      - Boolean Category Datatypes is used for representing or storing logical values i.e. true or false.
+      - In Java programming to represent boolean values or logical values we use a datatype called "boolean".
+      - boolean datatypes takes zero byte of main memory space becuase boolean datatype of java implemented by SUN microsystem with a concepts of flip-flops.
+      - A flip-flop is a general purpose register which stores one bit of information (one(1)) -> true or zero (0)  -> false)
+
+      Note :- In c or c++ boolean datatype is not available for representing true or false values but a true value can be treated as non-zero and false values can be represented by zero.
+      
+   Default Value for primitive Data Type :-
+   ==============================================
+   Datatype            Size
+   ==============================================
+   byte                0
+   short               0
+   int                 0
+   long                0
+   float               0.0
+   double              0.0
+   char                '\u000'
+   boolean             false
+
+
+
+   
+
+            
+
+
+                                                                
+ 
+    
