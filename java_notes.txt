@@ -247,6 +247,61 @@ Before Java -
    boolean             false
 
 
+Variable in Java :-
+    ===================
+     - If we enter any input to the program then the input must be stored in the main memory of the computer in terms of variables.
+     - Without variables concept one can't represent or store the input of the user in the main memory of the computer. 
+     - Variables are also know as building blocks of the programming language.
+
+     Definition :- 
+              Variable is an identifier whose value is changes during execution of the program.
+
+    Rules :-
+      - When we write some Java applications we may use collection of variables. When we are using variables in Java the Java progammer is highly recommended to use the following rules.
+        - The first letter of the variable must be an alphabet.
+        - The lenght of the variable in Java can be allowed upto 32 characters.
+        - No special symbols are allowed except underscore(_) and $.
+        - No special keywords/reserved words are allowed as variable.
+
+    * Variable Declaration :-
+      - The process of allocating Sufficient amount of memory space along with a variable name in the main memory of computer is know as variable declaration.
+      - Before using any variable in Java that variable must be declared.
+
+        Syntax :- 
+                 datatype v1,v2,v3,....vn;
+        Here datatype represents either fundamental or derived or user defined datatype.
+        v1,v2,....vn represents valid variable names of Java.
+
+        e.g : 
+             int a,b,C;
+             float f1,f2,f3;
+             char c11010,c2,c3;
+             boolean b1,b2;
+
+      Let us consider the following statement
+
+        int a;
+
+      When the above statement is executed then the system will perform the following actions 
+
+       1. We get suffiecient memory space depends upon data type.
+          a is of type integer so it will get 4 bytes of memory allocation.
+       2. Whatever memory space is created in above statement the memory space is qualified by variable name a.
+       3. Each and every variable in Java must have a distinct or unique address. Address is for system to process the value and variable is for the programmer to access the value.
+       4. Memory is one of the essential components, the system will place default values depends on the datatypes. 
+        
+    * Initialization of variables :-
+      - The process of placing programmer defined value within the variable without placing default value is known as initialization of a variable.
+      -  Whenever we decided to place predecided values in the variables then we must choose the concept of initialization.
+
+      Syntaxt : 
+                datatype v1 = value1, v2 = value2,.....vn = valuen;
+            
+        - val1, val2,....,valn represents list of predecided values placing in the variables v1,v2,...,vn respectively.
+          e.g. 
+              float PI = 3.14f;
+              int a = 10, b = 20;
+
 
    
 
